@@ -1,1 +1,58 @@
-"# Graph-U-Nets-Tensorflow" 
+# Graph Prediction Model
+
+Ce projet implémente un modèle de prédiction de graphes utilisant des réseaux de neurones pour effectuer des tâches de classification sur des graphes de données. Le modèle est entraîné à partir de données spécifiques en utilisant une architecture de réseau de neurones graphiques (Graph Neural Network, GNN).
+Table des matières
+  [Description]
+  [Prérequis]
+  [Utilisation]
+  [Préparation des données]
+  [Exécution de l'entraînement]
+  [Évaluation du modèle]
+  [Structure du projet]
+  [Rôle de chaque fichier]
+  [Contributions]
+  [Licence]
+##Description
+  Ce projet implémente un modèle de prédiction basé sur des graphes en utilisant TensorFlow. Le modèle est utilisé pour des tâches telles que la classification de nœuds et la prédiction de propriétés de graphes. Le code utilise une architecture de réseau de neurones pour apprendre les représentations des graphes et les utiliser pour prédire des résultats.
+  Le modèle s'entraîne sur un ensemble de données de graphes, qui peut être chargé à partir de fichiers externes. Les performances du modèle sont évaluées en utilisant des métriques telles que la précision et la perte.
+
+##Prérequis
+Avant d'exécuter ce projet, vous devez installer les dépendances suivantes :
+
+  Python 3.7+
+  TensorFlow 2.x
+  NumPy
+  tqdm
+Vous pouvez installer les dépendances requises avec le fichier requirements.txt :
+```bash
+pip install -r requirements.txt
+```
+##Utilisation
+###Préparation des données
+Les données doivent être sous la forme de graphes. Le projet utilise un module appelé FileLoader pour charger les données dans le format attendu. Vous pouvez spécifier le chemin vers le dossier contenant les données avec l'argument -data.
+
+###Exécution de l'entraînement
+Une fois les données préparées, vous pouvez entraîner le modèle en utilisant le script main.py.
+
+Voici un exemple de commande pour lancer l'entraînement :
+```bash
+python main.py -data PROTEINS -num_epochs 200 -batch 64 -lr 0.001 -fold 1
+```
+Cette commande lance l'entraînement sur le premier fold du jeu de données PROTEINS avec les paramètres suivants :
+
+Nombre d'époques d'entraînement : 200
+Taille des lots : 64
+Taux d'apprentissage : 0.001
+Fold : 1 
+###Évaluation du modèle
+Après l'entraînement, le modèle sera évalué sur le jeu de test, et les résultats seront enregistrés dans le fichier spécifié par l'argument -acc_file(re.txt). Le modèle utilise la précision et la perte pour évaluer ses performances.
+Les résultats des performances seront affichés à la fin de chaque époque et sauvegardés dans un fichier pour un suivi ultérieur.
+
+##Rôle de chaque fichier
+###main.py : Le script principal qui coordonne l'exécution du projet. Il charge les arguments de la ligne de commande, charge les données à l'aide de FileLoader, initialise le modèle de réseau de neurones et démarre le processus d'entraînement. Il gère également l'entraînement sur un ou plusieurs folds selon les spécifications.
+
+###trainer.py : Contient la classe Trainer qui gère l'entraînement du modèle. Il contient des méthodes pour la gestion des époques d'entraînement, le calcul des pertes et des précisions, et l'application des gradients pour l'optimisation du modèle. Il est responsable de l'entraînement du modèle avec les données et d'évaluation de sa performance.
+
+###network.py : Contient la définition du réseau de neurones utilisé pour la prédiction de graphes. La classe GNet définit la structure du modèle, notamment les couches du réseau, les fonctions d'activation, et la manière dont les graphes sont traités. C'est ici que le modèle de réseau de neurones est créé et configuré.
+
+###ops.py : Ce fichier contient des fonctions utilitaires supplémentaires pour le projet. Il peut inclure des fonctions pour manipuler les graphes, effectuer des transformations de données, ou réaliser des calculs nécessaires à l'entraînement du modèle.
