@@ -57,6 +57,5 @@ Pour chaque bloc de texte :
     - La ième ligne (indexée à partir de 0) commence par t m, où :
        - t est le tag du nœud actuel,
        - m est le nombre de voisins du nœud actuel.
-         
-Les m nombres suivants indiquent les indices des nœuds voisins (commençant à 0).
-Les d nombres suivants (s'il y en a) représentent les caractéristiques continues du nœud (attributs).
+       - Les m nombres suivants indiquent les indices des nœuds voisins (commençant à 0).
+       - Les d nombres suivants (s'il y en a) représentent les caractéristiques continues du nœud (attributs).
