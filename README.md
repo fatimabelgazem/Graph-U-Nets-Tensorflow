@@ -10,7 +10,8 @@ Ce projet implémente un modèle de prédiction de graphes utilisant des réseau
      - [Évaluation du modèle](#évaluation-du-modèle)
   4. [Structure du projet](#structure-du-projet)
      - [Rôle de chaque fichier](#rôle-de-chaque-fichier)
-  5. [Contributions](#contributions)
+  5. [Auteurs](#Auteurs)
+  6. [Références](#Références)
   
   ---
   
@@ -82,4 +83,13 @@ Les résultats des performances seront affichés à la fin de chaque époque et 
 - **ops.py** : Ce fichier contient des fonctions utilitaires supplémentaires pour le projet. Il peut inclure des fonctions pour manipuler les graphes, effectuer des transformations de données, ou réaliser des calculs nécessaires à l'entraînement du modèle.
 
 ---
-## Contributions
+
+## Auteurs
+Ce projet a été développé par :
+ - Fatima Belgazem :fatimabelgazem1@gmail.com
+ - Maryam Ajahoud : maryamajahoud134@gmail.com
+
+---
+
+## Références
+ - Graph U-Nets : https://arxiv.org/abs/1905.05178
