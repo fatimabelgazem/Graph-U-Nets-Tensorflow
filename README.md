@@ -4,19 +4,18 @@ Ce projet implémente un modèle de prédiction de graphes utilisant des réseau
 ##Table des matières
   1. [Description](#description)
   2. [Prérequis](#prérequis)
-  3. [Installation](#installation)
-  4. [Utilisation](#utilisation)
+  3. [Utilisation](#utilisation)
    - [Préparation des données](#préparation-des-données)
    - [Exécution de l'entraînement](#exécution-de-lentraînement)
    - [Évaluation du modèle](#évaluation-du-modèle)
-  5. [Structure du projet](#structure-du-projet)
+  4. [Structure du projet](#structure-du-projet)
    - [Rôle de chaque fichier](#rôle-de-chaque-fichier)
-  6. [Contributions](#contributions)
-  7. [Licence](#licence)
-##Description
+  
+  ---
+  ##Description
   Ce projet implémente un modèle de prédiction basé sur des graphes en utilisant TensorFlow. Le modèle est utilisé pour des tâches telles que la classification de nœuds et la prédiction de propriétés de graphes. Le code utilise une architecture de réseau de neurones pour apprendre les représentations des graphes et les utiliser pour prédire des résultats.
   Le modèle s'entraîne sur un ensemble de données de graphes, qui peut être chargé à partir de fichiers externes. Les performances du modèle sont évaluées en utilisant des métriques telles que la précision et la perte.
-
+---
 ##Prérequis
 Avant d'exécuter ce projet, vous devez installer les dépendances suivantes :
 
