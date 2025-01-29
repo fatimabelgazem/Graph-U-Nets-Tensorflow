@@ -45,14 +45,17 @@ Caractéristiques des nœuds : Chaque nœud possède des attributs qui décriven
 Label : Chaque graphe est associé à une classe qui peut représenter une catégorie fonctionnelle ou structurelle de la protéine.
 
 # Format des données TXT
+
 1ère ligne : N, qui représente le nombre de graphes. Les N blocs suivants décrivent chacun un graphe.
+
 Pour chaque bloc de texte :
-Une ligne contient n l, où :
-n est le nombre de nœuds dans le graphe actuel,
-l est le label (étiquette) du graphe.
-Les n lignes suivantes décrivent les nœuds du graphe :
-La ième ligne (indexée à partir de 0) commence par t m, où :
-t est le tag du nœud actuel,
-m est le nombre de voisins du nœud actuel.
+
+ - Une ligne contient n l, où :
+     - n est le nombre de nœuds dans le graphe actuel,
+     - l est le label (étiquette) du graphe.
+ - Les n lignes suivantes décrivent les nœuds du graphe :
+    - La ième ligne (indexée à partir de 0) commence par t m, où :
+       - t est le tag du nœud actuel,
+       - m est le nombre de voisins du nœud actuel.
 Les m nombres suivants indiquent les indices des nœuds voisins (commençant à 0).
 Les d nombres suivants (s'il y en a) représentent les caractéristiques continues du nœud (attributs).
