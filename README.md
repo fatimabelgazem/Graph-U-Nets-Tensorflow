@@ -47,7 +47,8 @@ Cette commande lance l'entraînement sur le premier fold du jeu de données PROT
   - Nombre d'époques d'entraînement : 200
   - Taille des lots : 64
   - Taux d'apprentissage : 0.001
-  - Fold : 1 
+  - Fold : 1
+    
 Si vous ne spécifiez aucun argument, le modèle utilisera les valeurs par défaut définies dans main.py :
 ```bash
 python main.py
