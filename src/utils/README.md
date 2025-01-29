@@ -1,6 +1,6 @@
 ---
 
-# Description du projet
+# Description de ce dossier 
 
   Ce projet porte sur le traitement et l'utilisation de graphes pour la classification dans le cadre de modèles d'apprentissage profond. Les fichiers fournis, data_loader.py et dataset.py, contiennent des outils pour charger et traiter des graphes à partir de données brutes, les préparer pour l'entraînement, et gérer des batchs de données dans des modèles de réseaux de neurones.
 
@@ -57,5 +57,6 @@ Pour chaque bloc de texte :
     - La ième ligne (indexée à partir de 0) commence par t m, où :
        - t est le tag du nœud actuel,
        - m est le nombre de voisins du nœud actuel.
+         
 Les m nombres suivants indiquent les indices des nœuds voisins (commençant à 0).
 Les d nombres suivants (s'il y en a) représentent les caractéristiques continues du nœud (attributs).
