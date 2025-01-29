@@ -53,18 +53,18 @@ Si vous ne spécifiez aucun argument, le modèle utilisera les valeurs par défa
 python main.py
 ```
 Les paramètres par défaut sont :
-  -num_epochs=200
-  -batch_size=64
-  -learning_rate=0.001
-  -deg_as_tag=0
-  -layer_num=3
-  -hidden_dim=512
-  -layer_dim=64
-  -drop_network=0.3
-  -drop_classifier=0.3
-  -activation_network=ELU
-  -activation_classifier=ELU
-  -pool_rates_layers="0.9 0.8 0.7"
+  - num_epochs=200
+  - batch_size=64
+  - learning_rate=0.001
+  - deg_as_tag=0
+  - layer_num=3
+  - hidden_dim=512
+  - layer_dim=64
+  - drop_network=0.3
+  - drop_classifier=0.3
+  - activation_network=ELU
+  - activation_classifier=ELU
+  - pool_rates_layers="0.9 0.8 0.7"
 ### Évaluation du modèle
 Après l'entraînement, le modèle sera évalué sur le jeu de test, et les résultats seront enregistrés dans le fichier spécifié par l'argument -acc_file(re.txt). Le modèle utilise la précision et la perte pour évaluer ses performances.
 Les résultats des performances seront affichés à la fin de chaque époque et sauvegardés dans un fichier pour un suivi ultérieur.
