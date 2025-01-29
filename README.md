@@ -18,7 +18,7 @@ Ce projet implémente un modèle de prédiction de graphes utilisant des réseau
   Le modèle s'entraîne sur un ensemble de données de graphes, qui peut être chargé à partir de fichiers externes. Les performances du modèle sont évaluées en utilisant des métriques telles que la précision et la perte.
   
 ---
-##Prérequis
+## Prérequis
 Avant d'exécuter ce projet, vous devez installer les dépendances suivantes :
 
   Python 3.7+
@@ -29,7 +29,8 @@ Vous pouvez installer les dépendances requises avec le fichier requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
-##Utilisation
+---
+## Utilisation
 ###Préparation des données
 Les données doivent être sous la forme de graphes. Le projet utilise un module appelé FileLoader pour charger les données dans le format attendu. Vous pouvez spécifier le chemin vers le dossier contenant les données avec l'argument -data.
 
@@ -50,11 +51,15 @@ Fold : 1
 Après l'entraînement, le modèle sera évalué sur le jeu de test, et les résultats seront enregistrés dans le fichier spécifié par l'argument -acc_file(re.txt). Le modèle utilise la précision et la perte pour évaluer ses performances.
 Les résultats des performances seront affichés à la fin de chaque époque et sauvegardés dans un fichier pour un suivi ultérieur.
 
-##Rôle de chaque fichier
-###main.py : Le script principal qui coordonne l'exécution du projet. Il charge les arguments de la ligne de commande, charge les données à l'aide de FileLoader, initialise le modèle de réseau de neurones et démarre le processus d'entraînement. Il gère également l'entraînement sur un ou plusieurs folds selon les spécifications.
+---
 
-###trainer.py : Contient la classe Trainer qui gère l'entraînement du modèle. Il contient des méthodes pour la gestion des époques d'entraînement, le calcul des pertes et des précisions, et l'application des gradients pour l'optimisation du modèle. Il est responsable de l'entraînement du modèle avec les données et d'évaluation de sa performance.
+## Rôle de chaque fichier
+### main.py : Le script principal qui coordonne l'exécution du projet. Il charge les arguments de la ligne de commande, charge les données à l'aide de FileLoader, initialise le modèle de réseau de neurones et démarre le processus d'entraînement. Il gère également l'entraînement sur un ou plusieurs folds selon les spécifications.
 
-###network.py : Contient la définition du réseau de neurones utilisé pour la prédiction de graphes. La classe GNet définit la structure du modèle, notamment les couches du réseau, les fonctions d'activation, et la manière dont les graphes sont traités. C'est ici que le modèle de réseau de neurones est créé et configuré.
+### trainer.py : Contient la classe Trainer qui gère l'entraînement du modèle. Il contient des méthodes pour la gestion des époques d'entraînement, le calcul des pertes et des précisions, et l'application des gradients pour l'optimisation du modèle. Il est responsable de l'entraînement du modèle avec les données et d'évaluation de sa performance.
 
-###ops.py : Ce fichier contient des fonctions utilitaires supplémentaires pour le projet. Il peut inclure des fonctions pour manipuler les graphes, effectuer des transformations de données, ou réaliser des calculs nécessaires à l'entraînement du modèle.
+### network.py : Contient la définition du réseau de neurones utilisé pour la prédiction de graphes. La classe GNet définit la structure du modèle, notamment les couches du réseau, les fonctions d'activation, et la manière dont les graphes sont traités. C'est ici que le modèle de réseau de neurones est créé et configuré.
+
+### ops.py : Ce fichier contient des fonctions utilitaires supplémentaires pour le projet. Il peut inclure des fonctions pour manipuler les graphes, effectuer des transformations de données, ou réaliser des calculs nécessaires à l'entraînement du modèle.
+
+---
