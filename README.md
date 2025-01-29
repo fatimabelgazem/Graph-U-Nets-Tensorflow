@@ -1,7 +1,7 @@
 # Graph Prediction Model
 
 Ce projet implémente un modèle de prédiction de graphes utilisant des réseaux de neurones pour effectuer des tâches de classification sur des graphes de données. Le modèle est entraîné à partir de données spécifiques en utilisant une architecture de réseau de neurones graphiques (Graph Neural Network, GNN).
-Table des matières
+##Table des matières
   [Description]
   [Prérequis]
   [Utilisation]
