@@ -1,7 +1,7 @@
 # Graph Prediction Model
 
 Ce projet implémente un modèle de prédiction de graphes utilisant des réseaux de neurones pour effectuer des tâches de classification sur des graphes de données. Le modèle est entraîné à partir de données spécifiques en utilisant une architecture de réseau de neurones graphiques (Graph Neural Network, GNN).
-##Table des matières
+## Table des matières
   1. [Description](#description)
   2. [Prérequis](#prérequis)
   3. [Utilisation](#utilisation)
@@ -10,6 +10,7 @@ Ce projet implémente un modèle de prédiction de graphes utilisant des réseau
      - [Évaluation du modèle](#évaluation-du-modèle)
   4. [Structure du projet](#structure-du-projet)
      - [Rôle de chaque fichier](#rôle-de-chaque-fichier)
+  5. [Contributions](#contributions)
   
   ---
   
@@ -47,6 +48,23 @@ Cette commande lance l'entraînement sur le premier fold du jeu de données PROT
   Taille des lots : 64
   Taux d'apprentissage : 0.001
   Fold : 1 
+Si vous ne spécifiez aucun argument, le modèle utilisera les valeurs par défaut définies dans main.py :
+```bash
+python main.py
+```
+Les paramètres par défaut sont :
+  -num_epochs=200
+  -batch_size=64
+  -learning_rate=0.001
+  -deg_as_tag=0
+  -layer_num=3
+  -hidden_dim=512
+  -layer_dim=64
+  -drop_network=0.3
+  -drop_classifier=0.3
+  -activation_network=ELU
+  -activation_classifier=ELU
+  -pool_rates_layers="0.9 0.8 0.7"
 ### Évaluation du modèle
 Après l'entraînement, le modèle sera évalué sur le jeu de test, et les résultats seront enregistrés dans le fichier spécifié par l'argument -acc_file(re.txt). Le modèle utilise la précision et la perte pour évaluer ses performances.
 Les résultats des performances seront affichés à la fin de chaque époque et sauvegardés dans un fichier pour un suivi ultérieur.
@@ -63,3 +81,4 @@ Les résultats des performances seront affichés à la fin de chaque époque et 
 - **ops.py** : Ce fichier contient des fonctions utilitaires supplémentaires pour le projet. Il peut inclure des fonctions pour manipuler les graphes, effectuer des transformations de données, ou réaliser des calculs nécessaires à l'entraînement du modèle.
 
 ---
+## Contributions
