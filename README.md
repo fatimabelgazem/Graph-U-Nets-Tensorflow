@@ -5,11 +5,11 @@ Ce projet implémente un modèle de prédiction de graphes utilisant des réseau
   1. [Description](#description)
   2. [Prérequis](#prérequis)
   3. [Utilisation](#utilisation)
-   - [Préparation des données](#préparation-des-données)
-   - [Exécution de l'entraînement](#exécution-de-lentraînement)
-   - [Évaluation du modèle](#évaluation-du-modèle)
+     - [Préparation des données](#préparation-des-données)
+     - [Exécution de l'entraînement](#exécution-de-lentraînement)
+     - [Évaluation du modèle](#évaluation-du-modèle)
   4. [Structure du projet](#structure-du-projet)
-   - [Rôle de chaque fichier](#rôle-de-chaque-fichier)
+     - [Rôle de chaque fichier](#rôle-de-chaque-fichier)
   
   ---
   
@@ -43,11 +43,11 @@ python main.py -data PROTEINS -num_epochs 200 -batch 64 -lr 0.001 -fold 1
 ```
 Cette commande lance l'entraînement sur le premier fold du jeu de données PROTEINS avec les paramètres suivants :
 
-Nombre d'époques d'entraînement : 200
-Taille des lots : 64
-Taux d'apprentissage : 0.001
-Fold : 1 
-###Évaluation du modèle
+  Nombre d'époques d'entraînement : 200
+  Taille des lots : 64
+  Taux d'apprentissage : 0.001
+  Fold : 1 
+### Évaluation du modèle
 Après l'entraînement, le modèle sera évalué sur le jeu de test, et les résultats seront enregistrés dans le fichier spécifié par l'argument -acc_file(re.txt). Le modèle utilise la précision et la perte pour évaluer ses performances.
 Les résultats des performances seront affichés à la fin de chaque époque et sauvegardés dans un fichier pour un suivi ultérieur.
 
