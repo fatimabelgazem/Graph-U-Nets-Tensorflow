@@ -36,10 +36,23 @@ Les données utilisées dans ce projet sont des graphes représentant des entit�
 
 # Exemple de dataset :
 
-Le dataset utilisé dans ce projet est un dataset typique de classification de graphes, comme le dataset MUTAG, qui contient des graphes représentant des molécules chimiques. Chaque graphe est un réseau de nœuds (atomes) reliés par des arêtes (liens chimiques), et chaque molécule est classée dans une des classes définies par le dataset.
+Le dataset utilisé dans ce projet est un dataset typique de classification de graphes, comme le dataset PROTEINS, qui contient des graphes représentant des structures de protéines. Chaque graphe représente une protéine où les nœuds correspondent aux résidus d'acides aminés et les arêtes indiquent les interactions entre ces résidus. Chaque protéine est classée dans une des classes définies par le dataset.
 
 Les graphes sont représentés par :
 
-Matrice d'adjacence (A) : Représente les connexions entre les nœuds du graphe.
-Caractéristiques des nœuds : Chaque nœud a une série de caractéristiques (par exemple, des attributs chimiques pour le cas du dataset MUTAG).
-Label : Chaque graphe a un label qui correspond à la classe de la molécule.
+Matrice d'adjacence (A) : Représente les connexions entre les résidus d'acides aminés dans la protéine.
+Caractéristiques des nœuds : Chaque nœud possède des attributs qui décrivent certaines propriétés des résidus d'acides aminés, comme leur structure ou leur fonction.
+Label : Chaque graphe est associé à une classe qui peut représenter une catégorie fonctionnelle ou structurelle de la protéine.
+
+# Format des données TXT
+1ère ligne : N, qui représente le nombre de graphes. Les N blocs suivants décrivent chacun un graphe.
+Pour chaque bloc de texte :
+Une ligne contient n l, où :
+n est le nombre de nœuds dans le graphe actuel,
+l est le label (étiquette) du graphe.
+Les n lignes suivantes décrivent les nœuds du graphe :
+La ième ligne (indexée à partir de 0) commence par t m, où :
+t est le tag du nœud actuel,
+m est le nombre de voisins du nœud actuel.
+Les m nombres suivants indiquent les indices des nœuds voisins (commençant à 0).
+Les d nombres suivants (s'il y en a) représentent les caractéristiques continues du nœud (attributs).
