@@ -1,6 +1,6 @@
 ---
 
-# Description de ce dossier 
+# Description  du projet
 
   Ce projet porte sur le traitement et l'utilisation de graphes pour la classification dans le cadre de modèles d'apprentissage profond. Les fichiers fournis, data_loader.py et dataset.py, contiennent des outils pour charger et traiter des graphes à partir de données brutes, les préparer pour l'entraînement, et gérer des batchs de données dans des modèles de réseaux de neurones.
 
