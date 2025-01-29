@@ -86,8 +86,8 @@ Les résultats des performances seront affichés à la fin de chaque époque et 
 
 ## Auteurs
 Ce projet a été développé par :
- - Fatima Belgazem :fatimabelgazem1@gmail.com
- - Maryam Ajahoud : maryamajahoud134@gmail.com
+ - Fatima Belgazem : fatimabelgazem1@gmail.com
+ - Maryam Ajahoud  : maryamajahoud134@gmail.com
 
 ---
 
