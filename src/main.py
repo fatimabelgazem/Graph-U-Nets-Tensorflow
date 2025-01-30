@@ -14,7 +14,7 @@ def get_args():
     parser.add_argument('-seed', type=int, default=1, help='Seed aléatoire pour la reproductibilité')
     parser.add_argument('-data', default='PROTEINS', help='Nom du dossier contenant les données')
     parser.add_argument('-fold', type=int, default=1, help='Numéro de la division des données (1 à 10)')
-    parser.add_argument('-num_epochs', type=int, default=200, help='Nombre d\'époques d\'entraînement')
+    parser.add_argument('-num_epochs', type=int, default=12, help='Nombre d\'époques d\'entraînement')
     parser.add_argument('-batch', type=int, default=64, help='Taille des lots')
     parser.add_argument('-lr', type=float, default=0.001, help='Taux d\'apprentissage')
     parser.add_argument('-deg_as_tag', type=int, default=0, help='Utiliser le degré du nœud comme tag (1 pour oui)')
